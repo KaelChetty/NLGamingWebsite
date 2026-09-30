@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Calculator | Next Level Gaming & Esports Arena</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Next Level Gaming & Esports Arena</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="fees.html">Fees</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="calculate.html">Calculator</a>
+            <a href="booking.html">Book Now</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Price Calculator</h2>
+
+            <p>
+                Use the price calculator to estimate the cost of your gaming experience.
+            </p>
+        </section>
+
+        <section>
+            <h2>Select an Experience</h2>
+
+            <label for="experience">Experience:</label><br>
+
+            <select id="experience" name="experience">
+                <option value="">Select an experience</option>
+                <option value="1500">Ultimate Gamer Pass - R1 500</option>
+                <option value="1500">VIP Gaming Experience - R1 500</option>
+                <option value="1500">Esports Training Package - R1 500</option>
+                <option value="1500">Birthday Party Package - R1 500</option>
+                <option value="750">Virtual Reality Experience - R750</option>
+                <option value="750">Racing Simulator Challenge - R750</option>
+                <option value="750">Escape Room Challenge - R750</option>
+            </select>
+
+            <br><br>
+
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+            <br><br>
+
+            <button type="button">Calculate Price</button>
+        </section>
+
+        <section>
+            <h2>Quantity Discounts</h2>
+
+            <p>1 booking: No discount</p>
+            <p>2 bookings: 5% discount</p>
+            <p>3 bookings: 10% discount</p>
+            <p>4 or more bookings: 15% discount</p>
+
+            <p>
+                VAT of 15% is calculated after the applicable discount.
+            </p>
+        </section>
+
+        <section>
+            <h2>Estimated Total</h2>
+
+            <p><strong>Subtotal:</strong> R0.00</p>
+            <p><strong>Discount:</strong> R0.00</p>
+            <p><strong>VAT (15%):</strong> R0.00</p>
+            <p><strong>Total:</strong> R0.00</p>
+
+            <p>
+                The calculated values will be displayed here when website
+                functionality is implemented.
+            </p>
+
+            <a href="booking.html">Continue to Booking</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Next Level Gaming & Esports Arena</p>
+        <p>Your Game. Your Arena.</p>
+        <p>&copy; 2026 Next Level Gaming & Esports Arena</p>
+    </footer>
+
+</body>
+
+</html>

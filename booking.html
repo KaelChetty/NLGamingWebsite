@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Next Level Gaming & Esports Arena</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Next Level Gaming & Esports Arena</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="fees.html">Fees</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="calculate.html">Calculator</a>
+            <a href="booking.html">Book Now</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Book Your Experience</h2>
+
+            <p>
+                Complete the form below to enter your booking details.
+            </p>
+        </section>
+
+        <section>
+            <form action="summary.html">
+
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required>
+
+                <br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required>
+
+                <br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required>
+
+                <br><br>
+
+                <label for="experience">Select Experience:</label><br>
+                <select id="experience" name="experience" required>
+                    <option value="">Select an experience</option>
+                    <option>Ultimate Gamer Pass</option>
+                    <option>VIP Gaming Experience</option>
+                    <option>Esports Training Package</option>
+                    <option>Birthday Party Package</option>
+                    <option>Virtual Reality Experience</option>
+                    <option>Racing Simulator Challenge</option>
+                    <option>Escape Room Challenge</option>
+                </select>
+
+                <br><br>
+
+                <label for="quantity">Quantity:</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+                <br><br>
+
+                <label for="date">Booking Date:</label><br>
+                <input type="date" id="date" name="date" required>
+
+                <br><br>
+
+                <label for="time">Booking Time:</label><br>
+                <input type="time" id="time" name="time" required>
+
+                <br><br>
+
+                <button type="submit">Review Booking</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Need a Price Estimate?</h2>
+
+            <p>
+                Use our calculator before completing your booking request to
+                estimate the cost of your selected experience.
+            </p>
+
+            <a href="calculate.html">Open Price Calculator</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Next Level Gaming & Esports Arena</p>
+        <p>Your Game. Your Arena.</p>
+        <p>&copy; 2026 Next Level Gaming & Esports Arena</p>
+    </footer>
+
+</body>
+
+</html>
