@@ -1,83 +1,161 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Confirmation | Next Level Gaming & Esports Arena</title>
+    <meta name="description" content="Your booking request confirmation at Next Level Gaming and Esports Arena.">
+    <title>Booking Confirmation | Next Level Gaming</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <h1>Next Level Gaming & Esports Arena</h1>
+
+        <div class="brand">
+            <img src="images/nl_logo.png" alt="Next Level Gaming Logo">
+            <h1>Next Level Gaming & Esports Arena</h1>
+        </div>
 
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
+
+            <div class="dropdown">
+                <a href="experiences.html" class="dropdown-toggle">
+                    Experiences &#9662;
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="experiences.html">All Experiences</a>
+                    <a href="vr.html">Virtual Reality</a>
+                    <a href="racing.html">Racing Simulator</a>
+                    <a href="esports.html">Esports Gaming</a>
+                    <a href="escape.html">Escape Room</a>
+                    <a href="birthday.html">Birthday Parties</a>
+                    <a href="vip.html">VIP Experience</a>
+                    <a href="ultimate.html">Ultimate Gamer Pass</a>
+                </div>
+            </div>
+
             <a href="fees.html">Fees</a>
-            <a href="experiences.html">Experiences</a>
             <a href="calculate.html">Calculator</a>
             <a href="booking.html">Book Now</a>
             <a href="contact.html">Contact</a>
         </nav>
+
     </header>
 
     <main>
 
-        <section>
-            <h2>Booking Confirmed</h2>
+        <section class="plan-section">
+
+            <h2>Booking Request Received!</h2>
+
+            <h3>Thank You for Choosing Next Level Gaming</h3>
 
             <p>
-                Thank you for completing your booking request with
-                Next Level Gaming & Esports Arena.
+                Your booking request has been successfully submitted.
+                We appreciate your interest in Next Level Gaming
+                & Esports Arena.
             </p>
 
-            <p>
-                Your booking request has been completed for this website
-                demonstration.
-            </p>
+            <h3>Your Booking Reference</h3>
+
+            <h2 id="bookingReference">Loading...</h2>
+
         </section>
 
         <section>
-            <h2>Booking Reference</h2>
 
-            <p>
-                <strong>Reference:</strong> Your booking reference will appear here.
-            </p>
+            <h2>Booking Details</h2>
 
-            <p>
-                Please keep your booking information for your records.
-            </p>
+            <table>
+
+                <tbody>
+
+                    <tr>
+                        <th>Customer Name</th>
+                        <td id="confirmName"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Experience</th>
+                        <td id="confirmExperience"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Booking Date</th>
+                        <td id="confirmDate"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Number of Guests</th>
+                        <td id="confirmGuests"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Estimated Total</th>
+                        <td id="confirmTotal"></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
         </section>
 
         <section>
+
             <h2>What's Next?</h2>
 
             <p>
-                You can return to the home page or continue exploring the
-                experiences available at the arena.
+                Your booking request has been recorded in this
+                browser. The reservation is not yet confirmed
+                by the arena.
             </p>
 
-            <a href="index.html">Return to Home</a>
+            <p>
+                Please keep your booking reference for future
+                reference.
+            </p>
 
-            <br><br>
+        </section>
 
-            <a href="experiences.html">View More Experiences</a>
+        <section class="plan-section">
 
-            <br><br>
+            <h2>Thank You!</h2>
 
-            <a href="booking.html">Make Another Booking</a>
+            <div class="plan-links">
+
+                <a href="index.html">Return Home</a>
+
+                <a href="experiences.html">Explore Experiences</a>
+
+                <a href="contact.html">Contact Us</a>
+
+            </div>
+
         </section>
 
     </main>
 
     <footer>
+
+        <img src="images/nl_logo.png"
+             alt="Next Level Gaming Logo"
+             class="footer-logo">
+
         <p>Next Level Gaming & Esports Arena</p>
+
         <p>Your Game. Your Arena.</p>
+
         <p>&copy; 2026 Next Level Gaming & Esports Arena</p>
+
     </footer>
 
 </body>
-
 </html>

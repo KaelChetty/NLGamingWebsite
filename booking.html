@@ -1,26 +1,52 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking | Next Level Gaming & Esports Arena</title>
+    <meta name="description" content="Book your gaming experience at Next Level Gaming and Esports Arena.">
+    <title>Book Now | Next Level Gaming</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <h1>Next Level Gaming & Esports Arena</h1>
+
+        <div class="brand">
+            <img src="images/nl_logo.png" alt="Next Level Gaming Logo">
+            <h1>Next Level Gaming & Esports Arena</h1>
+        </div>
 
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
+
+            <div class="dropdown">
+                <a href="experiences.html" class="dropdown-toggle">
+                    Experiences &#9662;
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="experiences.html">All Experiences</a>
+                    <a href="vr.html">Virtual Reality</a>
+                    <a href="racing.html">Racing Simulator</a>
+                    <a href="esports.html">Esports Gaming</a>
+                    <a href="escape.html">Escape Room</a>
+                    <a href="birthday.html">Birthday Parties</a>
+                    <a href="vip.html">VIP Experience</a>
+                    <a href="ultimate.html">Ultimate Gamer Pass</a>
+                </div>
+            </div>
+
             <a href="fees.html">Fees</a>
-            <a href="experiences.html">Experiences</a>
             <a href="calculate.html">Calculator</a>
             <a href="booking.html">Book Now</a>
             <a href="contact.html">Contact</a>
         </nav>
+
     </header>
 
     <main>
@@ -29,81 +55,173 @@
             <h2>Book Your Experience</h2>
 
             <p>
-                Complete the form below to enter your booking details.
+                Ready to take your gaming experience to the next level?
+                Complete the booking request form below and provide
+                your details so we can assist with your reservation.
             </p>
-        </section>
-
-        <section>
-            <form action="summary.html">
-
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" required>
-
-                <br><br>
-
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" required>
-
-                <br><br>
-
-                <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone" required>
-
-                <br><br>
-
-                <label for="experience">Select Experience:</label><br>
-                <select id="experience" name="experience" required>
-                    <option value="">Select an experience</option>
-                    <option>Ultimate Gamer Pass</option>
-                    <option>VIP Gaming Experience</option>
-                    <option>Esports Training Package</option>
-                    <option>Birthday Party Package</option>
-                    <option>Virtual Reality Experience</option>
-                    <option>Racing Simulator Challenge</option>
-                    <option>Escape Room Challenge</option>
-                </select>
-
-                <br><br>
-
-                <label for="quantity">Quantity:</label><br>
-                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
-
-                <br><br>
-
-                <label for="date">Booking Date:</label><br>
-                <input type="date" id="date" name="date" required>
-
-                <br><br>
-
-                <label for="time">Booking Time:</label><br>
-                <input type="time" id="time" name="time" required>
-
-                <br><br>
-
-                <button type="submit">Review Booking</button>
-
-            </form>
-        </section>
-
-        <section>
-            <h2>Need a Price Estimate?</h2>
 
             <p>
-                Use our calculator before completing your booking request to
-                estimate the cost of your selected experience.
+                Please ensure that all required information is
+                completed correctly before submitting your request.
+            </p>
+        </section>
+
+        <section>
+
+            <h2>Booking Details</h2>
+
+            <form id="bookingForm">
+
+                <label for="fullName">Full Name</label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+                <label for="phone">Contact Number</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your contact number"
+                    required
+                >
+
+                <label for="experience">Select Experience</label>
+
+                <select id="experience" name="experience" required>
+
+                    <option value="">-- Select an Experience --</option>
+
+                    <option value="Virtual Reality Experience">
+                        Virtual Reality Experience
+                    </option>
+
+                    <option value="Racing Simulator Challenge">
+                        Racing Simulator Challenge
+                    </option>
+
+                    <option value="Escape Room Challenge">
+                        Escape Room Challenge
+                    </option>
+
+                    <option value="Esports Training Package">
+                        Esports Training Package
+                    </option>
+
+                    <option value="Birthday Party Package">
+                        Birthday Party Package
+                    </option>
+
+                    <option value="VIP Gaming Experience">
+                        VIP Gaming Experience
+                    </option>
+
+                    <option value="Ultimate Gamer Pass">
+                        Ultimate Gamer Pass
+                    </option>
+
+                </select>
+
+                <label for="bookingDate">Preferred Booking Date</label>
+
+                <input
+                    type="date"
+                    id="bookingDate"
+                    name="bookingDate"
+                    required
+                >
+
+                <label for="guests">Number of Guests</label>
+
+                <input
+                    type="number"
+                    id="guests"
+                    name="guests"
+                    min="1"
+                    max="50"
+                    value="1"
+                    required
+                >
+
+                <label for="requests">Additional Information</label>
+
+                <textarea
+                    id="requests"
+                    name="requests"
+                    rows="5"
+                    placeholder="Enter any additional requests or information..."
+                ></textarea>
+
+                <button type="submit">Submit Booking Request</button>
+
+            </form>
+
+            <p id="bookingMessage"></p>
+
+        </section>
+
+        <section>
+
+            <h2>Before Submitting</h2>
+
+            <p>
+                Please double-check your contact information,
+                selected experience and preferred booking date.
             </p>
 
-            <a href="calculate.html">Open Price Calculator</a>
+            <p>
+                Submitting this form is a booking request and
+                does not automatically confirm a reservation.
+            </p>
+
+        </section>
+
+        <section class="plan-section">
+
+            <h2>Need Help?</h2>
+
+            <p>
+                If you have questions about our experiences
+                or booking process, please contact our team.
+            </p>
+
+            <div class="plan-links">
+                <a href="contact.html">Contact Us</a>
+                <a href="fees.html">View Pricing</a>
+                <a href="calculate.html">Calculate Price</a>
+            </div>
+
         </section>
 
     </main>
 
     <footer>
+
+        <img src="images/nl_logo.png"
+             alt="Next Level Gaming Logo"
+             class="footer-logo">
+
         <p>Next Level Gaming & Esports Arena</p>
         <p>Your Game. Your Arena.</p>
         <p>&copy; 2026 Next Level Gaming & Esports Arena</p>
+
     </footer>
 
 </body>
-
 </html>

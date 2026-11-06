@@ -1,101 +1,219 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Next Level Gaming and Esports Arena. Explore VR, racing simulators, esports and more.">
     <title>Next Level Gaming & Esports Arena</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Next Level Gaming & Esports Arena</h1>
+
+        <div class="brand">
+            <img src="images/nl_logo.png" alt="Next Level Gaming Logo">
+            <h1>Next Level Gaming & Esports Arena</h1>
+        </div>
 
         <nav>
             <a href="index.html">Home</a>
+
             <a href="about.html">About Us</a>
+
+            <div class="dropdown">
+
+                <a href="experiences.html" class="dropdown-toggle">
+                    Experiences &#9662;
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="experiences.html">All Experiences</a>
+                    <a href="vr.html">Virtual Reality</a>
+                    <a href="racing.html">Racing Simulator</a>
+                    <a href="esports.html">Esports Gaming</a>
+                    <a href="escape.html">Escape Room</a>
+                    <a href="birthday.html">Birthday Parties</a>
+                    <a href="vip.html">VIP Experience</a>
+                    <a href="ultimate.html">Ultimate Gamer Pass</a>
+                </div>
+
+            </div>
+
             <a href="fees.html">Fees</a>
-            <a href="experiences.html">Experiences</a>
+
             <a href="calculate.html">Calculator</a>
+
             <a href="booking.html">Book Now</a>
+
             <a href="contact.html">Contact</a>
         </nav>
+
     </header>
+
 
     <main>
 
-        <section>
-            <h2>Your Game. Your Arena.</h2>
+        <!-- HERO BANNER -->
 
-            <p>
-                Welcome to Next Level Gaming & Esports Arena, a gaming and
-                entertainment destination designed for gamers, friends and families.
-            </p>
+        <section class="hero-section">
 
-            <p>
-                Explore our gaming experiences, challenge your skills and discover
-                a new way to play.
-            </p>
+            <img src="images/nl_hero.png"
+                 alt="Next Level Gaming Arena"
+                 class="hero-image">
 
-            <a href="experiences.html">Explore Experiences</a>
+            <div class="hero-content">
 
-            <br><br>
+                <h2>Your Game. Your Arena.</h2>
 
-            <a href="booking.html">Book an Experience</a>
+                <p>
+                    Enter a world of gaming, competition and entertainment.
+                    Discover exciting experiences designed for gamers,
+                    friends and families.
+                </p>
+
+                <a href="experiences.html">Explore Experiences</a>
+
+                <a href="booking.html">Book Now</a>
+
+            </div>
+
         </section>
 
+
+        <!-- INTRODUCTION -->
+
         <section>
+
+            <h2>Welcome to Next Level Gaming</h2>
+
+            <p>
+                Next Level Gaming & Esports Arena is a gaming and
+                entertainment destination designed to bring people
+                together through interactive gaming experiences.
+            </p>
+
+            <p>
+                From virtual reality and racing simulators to
+                competitive esports and exciting challenges,
+                there is something for everyone.
+            </p>
+
+            <a href="about.html">Learn More About Us</a>
+
+        </section>
+
+
+        <!-- FEATURED EXPERIENCES -->
+
+        <section>
+
             <h2>Featured Experiences</h2>
 
-            <h3>Virtual Reality Experience</h3>
-            <p>
-                Step beyond the screen and experience gaming in a completely new way.
-            </p>
-            <a href="vr.html">View Virtual Reality Experience</a>
+            <div class="experience-grid">
 
-            <h3>Racing Simulator Challenge</h3>
-            <p>
-                Experience the excitement of racing and put your driving skills
-                to the test.
-            </p>
-            <a href="racing.html">View Racing Simulator Challenge</a>
+                <div class="experience-card">
 
-            <h3>Ultimate Gamer Pass</h3>
-            <p>
-                Enjoy an exciting gaming experience created for players who want
-                to take their time at the arena to the next level.
-            </p>
-            <a href="ultimate.html">View Ultimate Gamer Pass</a>
+                    <img src="images/nl_vr.png"
+                         alt="Virtual Reality Gaming">
+
+                    <h3>Virtual Reality</h3>
+
+                    <p>
+                        Step beyond the screen and explore
+                        immersive virtual worlds.
+                    </p>
+
+                    <a href="vr.html">Explore VR</a>
+
+                </div>
+
+
+                <div class="experience-card">
+
+                    <img src="images/nl_racing.png"
+                         alt="Racing Simulator">
+
+                    <h3>Racing Simulator</h3>
+
+                    <p>
+                        Experience the excitement of racing
+                        and test your driving skills.
+                    </p>
+
+                    <a href="racing.html">Explore Racing</a>
+
+                </div>
+
+
+                <div class="experience-card">
+
+                    <img src="images/nl_esports.png"
+                         alt="Esports Gaming">
+
+                    <h3>Esports Gaming</h3>
+
+                    <p>
+                        Compete, improve your abilities
+                        and challenge other players.
+                    </p>
+
+                    <a href="esports.html">Explore Esports</a>
+
+                </div>
+
+            </div>
+
+            <div class="plan-links">
+                <a href="experiences.html">View All Experiences</a>
+            </div>
+
         </section>
 
-        <section>
+
+        <!-- PLAN YOUR VISIT -->
+
+        <section class="plan-section">
+
             <h2>Plan Your Visit</h2>
 
             <p>
-                Check our prices, calculate the estimated cost of your experience
-                and complete a booking request.
+                Ready to experience something different?
+                Explore our pricing, calculate your booking
+                costs and reserve your preferred experience.
             </p>
 
-            <a href="fees.html">View Fees</a>
+            <div class="plan-links">
 
-            <br><br>
+                <a href="fees.html">View Pricing</a>
 
-            <a href="calculate.html">Calculate Price</a>
+                <a href="calculate.html">Calculate Price</a>
 
-            <br><br>
+                <a href="booking.html">Book Your Experience</a>
 
-            <a href="booking.html">Book Now</a>
+            </div>
+
         </section>
 
     </main>
 
+
     <footer>
+
+        <img src="images/nl_logo.png"
+             alt="Next Level Gaming Logo"
+             class="footer-logo">
+
         <p>Next Level Gaming & Esports Arena</p>
+
         <p>Your Game. Your Arena.</p>
+
         <p>&copy; 2026 Next Level Gaming & Esports Arena</p>
+
     </footer>
 
 </body>
-
 </html>

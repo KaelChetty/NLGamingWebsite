@@ -1,0 +1,471 @@
+
+/* ==========================================
+   NEXT LEVEL GAMING & ESPORTS ARENA
+   MATRIX GREEN WEBSITE THEME
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #050805;
+    color: #e5e5e5;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+    background: #080d09;
+    border-bottom: 2px solid #00ff41;
+    padding: 15px 5%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.brand img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.brand h1 {
+    color: #00ff41;
+    font-size: 26px;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 12px 0;
+    border-top: 1px solid #24452c;
+}
+
+nav a,
+.dropdown-toggle {
+    flex: 1;
+    text-align: center;
+    color: #b8ffca;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 8px;
+    border-radius: 5px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+nav a:hover,
+.dropdown-toggle:hover {
+    color: #000;
+    background: #00ff41;
+}
+
+/* EXPERIENCES DROPDOWN */
+
+.dropdown {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+.dropdown-toggle {
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background: #080d09;
+    border: 1px solid #00ff41;
+    border-radius: 6px;
+    padding: 8px;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 255, 65, 0.15);
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px 12px;
+    margin: 2px 0;
+    color: #b8ffca;
+    white-space: normal;
+}
+
+.dropdown-menu a:hover {
+    background: #00ff41;
+    color: #001b08;
+}
+
+/* MAIN CONTENT */
+
+main {
+    width: 90%;
+    max-width: 1350px;
+    margin: 30px auto;
+}
+
+section {
+    background: #101810;
+    border: 1px solid #203323;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #00ff41;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: #65ff91;
+    margin: 15px 0;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #c6d6c9;
+}
+
+/* HERO BANNER */
+
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 480px;
+    margin-top: -30px;
+    margin-left: calc(50% - 50vw);
+    margin-bottom: 40px;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    border-radius: 0;
+    background: #050805;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.88) 0%,
+        rgba(0, 0, 0, 0.55) 45%,
+        rgba(0, 0, 0, 0.05) 100%
+    );
+}
+
+.hero-content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    color: #00ff41;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* BUTTONS AND LINKS */
+
+main a {
+    display: inline-block;
+    background: #00e83b;
+    color: #001b08;
+    padding: 12px 22px;
+    margin: 8px 8px 8px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+main a:hover {
+    background: #65ff91;
+    transform: translateY(-2px);
+}
+
+/* EXPERIENCE GRID */
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+.experience-card {
+    min-width: 0;
+    background: #080e09;
+    border: 1px solid #24452c;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.experience-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.experience-card h3,
+.experience-card p,
+.experience-card a {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.experience-card p {
+    min-height: 65px;
+}
+
+/* PLAN YOUR VISIT */
+
+.plan-section {
+    text-align: center;
+}
+
+.plan-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #080d09;
+    border-top: 2px solid #00ff41;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 40px;
+}
+
+.footer-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #a9c5ae;
+}
+
+/* TABLES */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #24452c;
+    text-align: left;
+}
+
+th {
+    background: #102414;
+    color: #00ff41;
+}
+
+td {
+    color: #d5e5d8;
+}
+
+/* FORMS */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 18px;
+    background: #080e09;
+    color: #ffffff;
+    border: 1px solid #315638;
+    border-radius: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #00ff41;
+}
+
+button {
+    background: #00e83b;
+    color: #001b08;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #65ff91;
+}
+
+/* TABLET */
+
+@media (max-width: 850px) {
+
+    .experience-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero-section {
+        height: 400px;
+    }
+
+    .hero-content h2 {
+        font-size: 34px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a,
+    .dropdown-toggle {
+        font-size: 13px;
+        padding: 9px 4px;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 550px) {
+
+    .brand {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brand h1 {
+        font-size: 21px;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    nav a,
+    .dropdown-toggle {
+        white-space: normal;
+        font-size: 14px;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .dropdown:hover .dropdown-menu,
+    .dropdown:focus-within .dropdown-menu {
+        display: block;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section {
+        height: 350px;
+    }
+
+    .hero-content {
+        left: 3%;
+        right: 3%;
+        padding: 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 29px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .experience-card img {
+        height: 210px;
+    }
+}

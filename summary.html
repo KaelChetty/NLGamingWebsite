@@ -1,87 +1,195 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Summary | Next Level Gaming & Esports Arena</title>
+    <meta name="description" content="Review your booking details before confirming your Next Level Gaming booking request.">
+    <title>Booking Summary | Next Level Gaming</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <h1>Next Level Gaming & Esports Arena</h1>
+
+        <div class="brand">
+            <img src="images/nl_logo.png" alt="Next Level Gaming Logo">
+            <h1>Next Level Gaming & Esports Arena</h1>
+        </div>
 
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
+
+            <div class="dropdown">
+                <a href="experiences.html" class="dropdown-toggle">
+                    Experiences &#9662;
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="experiences.html">All Experiences</a>
+                    <a href="vr.html">Virtual Reality</a>
+                    <a href="racing.html">Racing Simulator</a>
+                    <a href="esports.html">Esports Gaming</a>
+                    <a href="escape.html">Escape Room</a>
+                    <a href="birthday.html">Birthday Parties</a>
+                    <a href="vip.html">VIP Experience</a>
+                    <a href="ultimate.html">Ultimate Gamer Pass</a>
+                </div>
+            </div>
+
             <a href="fees.html">Fees</a>
-            <a href="experiences.html">Experiences</a>
             <a href="calculate.html">Calculator</a>
             <a href="booking.html">Book Now</a>
             <a href="contact.html">Contact</a>
         </nav>
+
     </header>
 
     <main>
 
         <section>
-            <h2>Booking Summary</h2>
 
-            <p>
-                Review your booking details before confirming your request.
-            </p>
-        </section>
-
-        <section>
-            <h2>Your Details</h2>
-
-            <p><strong>Name:</strong> Your name will appear here</p>
-            <p><strong>Email:</strong> Your email will appear here</p>
-            <p><strong>Phone:</strong> Your phone number will appear here</p>
-        </section>
-
-        <section>
-            <h2>Experience Details</h2>
-
-            <p><strong>Experience:</strong> Selected experience</p>
-            <p><strong>Quantity:</strong> Selected quantity</p>
-            <p><strong>Date:</strong> Selected booking date</p>
-            <p><strong>Time:</strong> Selected booking time</p>
-        </section>
-
-        <section>
-            <h2>Price Summary</h2>
-
-            <p><strong>Subtotal:</strong> R0.00</p>
-            <p><strong>Discount:</strong> R0.00</p>
-            <p><strong>VAT (15%):</strong> R0.00</p>
-            <p><strong>Total:</strong> R0.00</p>
-
-            <p>
-                The final booking information and calculated values will be
-                displayed here when website functionality is implemented.
-            </p>
-        </section>
-
-        <section>
             <h2>Review Your Booking</h2>
 
-            <a href="booking.html">Edit Booking</a>
+            <p>
+                Please carefully review your booking information
+                and estimated costs before confirming your request.
+            </p>
+
+            <p id="summaryMessage"></p>
+
+        </section>
+
+        <section>
+
+            <h2>Customer Information</h2>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Full Name</th>
+                        <td id="summaryName"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Email Address</th>
+                        <td id="summaryEmail"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Contact Number</th>
+                        <td id="summaryPhone"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section>
+
+            <h2>Experience Details</h2>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Selected Experience</th>
+                        <td id="summaryExperience"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Booking Date</th>
+                        <td id="summaryDate"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Number of Guests</th>
+                        <td id="summaryGuests"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Additional Requests</th>
+                        <td id="summaryRequests"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section>
+
+            <h2>Price Breakdown</h2>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Subtotal</th>
+                        <td id="summarySubtotal"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Discount</th>
+                        <td>
+                            <span id="summaryDiscount"></span>
+                            (<span id="summaryDiscountRate"></span>)
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>VAT (15%)</th>
+                        <td id="summaryVat"></td>
+                    </tr>
+
+                    <tr>
+                        <th>Estimated Total</th>
+                        <td id="summaryTotal"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                The displayed amount is an estimate based on
+                your selected experience and number of guests.
+            </p>
+
+        </section>
+
+        <section class="plan-section">
+
+            <h2>Confirm Your Booking Request</h2>
+
+            <p>
+                By clicking the button below, you confirm that
+                the information provided is correct and wish
+                to submit your booking request.
+            </p>
+
+            <button type="button" id="confirmBooking">
+                Confirm Booking Request
+            </button>
 
             <br><br>
 
-            <a href="confirmation.html">Confirm Booking</a>
+            <a href="booking.html">Return to Booking Form</a>
+
         </section>
 
     </main>
 
     <footer>
+
+        <img src="images/nl_logo.png"
+             alt="Next Level Gaming Logo"
+             class="footer-logo">
+
         <p>Next Level Gaming & Esports Arena</p>
         <p>Your Game. Your Arena.</p>
         <p>&copy; 2026 Next Level Gaming & Esports Arena</p>
+
     </footer>
 
 </body>
-
 </html>

@@ -1,110 +1,177 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Next Level Gaming & Esports Arena</title>
+    <meta name="description" content="Contact Next Level Gaming and Esports Arena for enquiries and booking assistance.">
+    <title>Contact Us | Next Level Gaming</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <h1>Next Level Gaming & Esports Arena</h1>
+
+        <div class="brand">
+            <img src="images/nl_logo.png" alt="Next Level Gaming Logo">
+            <h1>Next Level Gaming & Esports Arena</h1>
+        </div>
 
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
+
+            <div class="dropdown">
+                <a href="experiences.html" class="dropdown-toggle">
+                    Experiences &#9662;
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="experiences.html">All Experiences</a>
+                    <a href="vr.html">Virtual Reality</a>
+                    <a href="racing.html">Racing Simulator</a>
+                    <a href="esports.html">Esports Gaming</a>
+                    <a href="escape.html">Escape Room</a>
+                    <a href="birthday.html">Birthday Parties</a>
+                    <a href="vip.html">VIP Experience</a>
+                    <a href="ultimate.html">Ultimate Gamer Pass</a>
+                </div>
+            </div>
+
             <a href="fees.html">Fees</a>
-            <a href="experiences.html">Experiences</a>
             <a href="calculate.html">Calculator</a>
             <a href="booking.html">Book Now</a>
             <a href="contact.html">Contact</a>
         </nav>
+
     </header>
 
     <main>
 
         <section>
-            <h2>Contact Us</h2>
+            <h2>Get in Touch</h2>
 
             <p>
-                Have a question about our gaming experiences or want to find out more?
-                Get in touch with Next Level Gaming & Esports Arena.
+                Have a question about our gaming experiences,
+                pricing or booking process? We would love to hear
+                from you.
+            </p>
+
+            <p>
+                Use the enquiry form below to send us your
+                questions or requests.
             </p>
         </section>
 
         <section>
+
+            <h2>Contact Information</h2>
+
+            <h3>Next Level Gaming & Esports Arena</h3>
+
+            <p><strong>Location:</strong> Johannesburg, South Africa</p>
+
+            <p>
+                <strong>Email:</strong>
+                Contact us using the enquiry form below.
+            </p>
+
+            <p>
+                <strong>Enquiries:</strong>
+                Gaming experiences, pricing, bookings and general questions.
+            </p>
+
+        </section>
+
+        <section>
+
             <h2>Send Us an Enquiry</h2>
 
-            <form>
+            <form id="contactForm">
 
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" required>
+                <label for="contactName">Full Name</label>
 
-                <br><br>
+                <input
+                    type="text"
+                    id="contactName"
+                    name="contactName"
+                    placeholder="Enter your full name"
+                    required
+                >
 
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" required>
+                <label for="contactEmail">Email Address</label>
 
-                <br><br>
+                <input
+                    type="email"
+                    id="contactEmail"
+                    name="contactEmail"
+                    placeholder="Enter your email address"
+                    required
+                >
 
-                <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone">
+                <label for="subject">Subject</label>
 
-                <br><br>
+                <select id="subject" name="subject" required>
 
-                <label for="subject">Subject:</label><br>
-                <input type="text" id="subject" name="subject" required>
+                    <option value="">-- Select a Subject --</option>
+                    <option value="General Enquiry">General Enquiry</option>
+                    <option value="Gaming Experiences">Gaming Experiences</option>
+                    <option value="Pricing">Pricing</option>
+                    <option value="Booking">Booking</option>
+                    <option value="Other">Other</option>
 
-                <br><br>
+                </select>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="6" required></textarea>
+                <label for="message">Your Message</label>
 
-                <br><br>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Type your message here..."
+                    required
+                ></textarea>
 
-                <button type="submit">Send Enquiry</button>
+                <button type="submit">Submit Enquiry</button>
 
             </form>
+
+            <p id="contactMessage"></p>
+
         </section>
 
-        <section>
-            <h2>Visit Us</h2>
+        <section class="plan-section">
 
-            <p>Johannesburg, South Africa</p>
-
-            <h3>Follow Us</h3>
-            <p>Facebook | Instagram | TikTok</p>
-        </section>
-
-        <section>
-            <h2>Ready to Play?</h2>
+            <h2>Ready to Visit Us?</h2>
 
             <p>
-                Explore our experiences, estimate your cost or complete a
-                booking request.
+                Explore our gaming experiences and start planning
+                your next visit to Next Level Gaming.
             </p>
 
-            <a href="experiences.html">View Experiences</a>
+            <div class="plan-links">
+                <a href="experiences.html">Explore Experiences</a>
+                <a href="booking.html">Book Now</a>
+            </div>
 
-            <br><br>
-
-            <a href="calculate.html">Calculate Price</a>
-
-            <br><br>
-
-            <a href="booking.html">Book Now</a>
         </section>
 
     </main>
 
     <footer>
+
+        <img src="images/nl_logo.png"
+             alt="Next Level Gaming Logo"
+             class="footer-logo">
+
         <p>Next Level Gaming & Esports Arena</p>
         <p>Your Game. Your Arena.</p>
         <p>&copy; 2026 Next Level Gaming & Esports Arena</p>
+
     </footer>
 
 </body>
-
 </html>
